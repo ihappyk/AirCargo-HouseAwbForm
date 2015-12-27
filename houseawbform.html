@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HAWB Form</title>
+
+<link href="hawbform.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="hawbform.js" type="text/javascript"></script>
+</head>
+
+<body alink="#F0F0F0">
+
+<form>
+	<CENTER>
+<table border="1" cellpadding="0" cellspacing="0" class="mainForm">
+  <!-- ROW 1 -->
+  <!--<tr>
+    <td colspan="2" width="100%">&nbsp;</td>
+  </tr> -->
+  
+  <!-- ROW 2 -->
+  <tr>
+    <td colspan="2" width="100%">
+		<table style="width:100%;" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="50%">
+					<div>
+						&nbsp;
+						<input type="text" class="smallTextBox1 prefix" title="prefix" value="117" name="txtPrefix" id="txtPrefix" maxlength="3" tabindex="1"/>
+						<input type="text" class="smallTextBox1"  title="Issuing Airport" name="txtIsssuingAirport" id="txtIsssuingAirport"value="CPH" maxlength="3" tabindex="2"/>
+						<input type="text" class="smallTextBox3 awbNumber" title="AWB Number" value="12345678" name="txtAwbNumber" id="txtAwbNumber" maxlength="8" tabindex="3"/>
+					</div>
+				</td>
+
+				<td width="50%" style="text-align:right">
+					<div>
+						<label style="font-size:15px;" class="BeBold">HAWB:</label>
+						<input type="text" class="smallTextBox1" title="Issuing Airport" name="txtIsssuingAirport" id="txtIsssuingAirport"value="CPH" maxlength="3" tabindex="2"/>
+						<input type="text" class="smallTextBox3" title="HAWB number" name="txtHAWBNo" id="txtHAWBNo"value="2312990" maxlength="6" tabindex="2"/>
+					&nbsp;
+					</div>
+					
+				</td>
+			</tr>
+		</table>
+	</td>
+  </tr>
+  
+  
+  <!-- ROW 3 -->
+  <tr>
+	<td>
+		<div style="border:1px solid;">
+		<table style="width:100%;" cellspacing="0" cellpadding="0">
+	<!-- ROW 1 -->
+			<tr>
+				<td width="50%">
+					<table style="width:100%;" >
+						<tr align="top">
+							<td class="BoldText" colspan="4" style="font-weight:bold">Shipper</td>
+						</tr>
+						<tr align="top">
+							<td colspan="4" bgcolor="#E3E4FA"> 
+								<table style="width:100%;border:1px solid">
+									<tr>
+										<td><label style="font-size:15px;">Name:</label></td>
+										<td><input type="text" style="width:220px" name="txtShipperName" id="txtShipperName" title="Shipper Name" maxlength="30" tabindex="4"/></td>
+										<td><label style="font-size:15px;">Account No.</label></td>
+										<td><input type="text" style="width:120px" name="txtShipperAccNo" id="txtShipperAccNo" title="Shipper Acc No" maxlength="15" tabindex="5"/></td>
+									</tr>
+									<tr>
+										<td><label style="font-size:15px;">Address:</label></td>
+										<td colspan="3"><input type="text" style="width:96%" name="txtShipperAddress1" id="txtShipperAddress1" title="Shipper Address" maxlength="50" tabindex="6"/></td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td><input type="text" style="width:220px" name="txtShipperAddress2" id="txtShipperAddress2" title="Shipper Address" maxlength="50" tabindex="7"/></td>
+										<td><label style="font-size:15px;">Country:</label></td>
+										<td><input type="text" style="width:120px" name="txtShipperCountry" id="txtShipperCountry" title="Shipper Country" maxlength="25" tabindex="8"/></td>
+									</tr>
+									<tr>
+										<td colspan=4>
+											<table style="width:100%" cellspacing="0" cellpadding="1">
+											<tr>
+												<td><label style="font-size:15px;">State:</label></td>
+												<td style="text-align: right;"><input type="text" style="width:100px" name="txtShipperState" id="txtShipperState" title="Shipper State" maxlength="2" tabindex="9"/></td>
+												<td><label style="font-size:15px;">City:</label></td>
+												<td><input type="text" style="width:100px" name="txtShipperCity" id="txtShipperCity" title="Shipper City" maxlength="25" tabindex="10"/></td>
+												<td><label style="font-size:15px;">Postal Code:</label></td>
+												<td><input type="text" style="width:120px" name="txtShipperPostalCode" id="txtShipperPostalCode" title="Shipper Postal Code" maxlength="10" tabindex="11"/></td>
+											</tr>
+											<tr>
+												<td><label style="font-size:15px;">Phone:</label></td>
+												<td style="text-align: right;"><input type="text" style="width:100px" name="txtShipperPhone" id="txtShipperPhone" title="Shipper Phone" maxlength="15" tabindex="12"/></td>
+												<td><label style="font-size:15px;">Fax:</label></td>
+												<td><input type="text" style="width:100px" name="txtShipperFax" id="txtShipperFax" title="Shipper Fax" maxlength="15" tabindex="13"/></td>
+												<td><label style="font-size:15px;">Email:</label></td>
+												<td><input type="text" style="width:120px" name="txtShipperEmail" id="txtShipperEmail" title="Shipper Email" maxlength="50" tabindex="14"/></td>
+											</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+	
+				<td width="50%" class="leftBorder">
+					<div>
+					<table style="width:100%;" cellspacing="0" cellpadding="0" >
+						<tr>
+							<td colspan="2" style="line-height:1.5;" class="mediumText">Not Negotiable</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="font-size:24px;font-weight:bold">House Waybill</td>
+						</tr>
+						<tr>
+							<td width="20%"><label style="font-size:15px;">Issued By</label></td>
+							<td width="80%">
+								<input type="text" class="BeBold" name="txtIssuedBy1" id="txtIssuedBy1" title="Air waybill Issued By" maxlength="80" tabindex="47"/>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%">&nbsp;</td>
+							<td width="80%">
+								<input type="text" class="BeBold" name="txtIssuedBy2" id="txtIssuedBy2" title="Air waybill Issued By" maxlength="80"/>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%">&nbsp;</td>
+							<td width="80%">
+								<input type="text" class="BeBold" name="txtIssuedBy3" id="txtIssuedBy3" title="Air waybill Issued By" maxlength="80"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2" class="smallText topBorder">
+								<p class="firstpar">Copies 1, 2 and 3 of this Air Waybill are originals and have the same validity</p>
+							</td>
+						</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+	<!-- ROW 2 -->
+			<tr>
+				<td width="50%">
+					<table width="100%" >
+						<tr align="top">
+							<td class="BoldText" colspan="4" style="font-weight:bold">Consignee</td>
+						</tr>
+						<tr align="top">
+							<td colspan="4" bgcolor="#E3E4FA"> 
+								<table style="width:100%;border:1px solid">
+									<tr>
+										<td><label style="font-size:15px;">Name:</label></td>
+										<td><input type="text" style="width:220px" name="txtConsigneeName" id="txtConsigneeName" title="Consignee Name" maxlength="30" tabindex="15"/></td>
+										<td><label style="font-size:15px;">Account No.</label></td>
+										<td><input type="text" style="width:120px" name="txtConsigneeAccNo" id="txtConsigneeAccNo" title="Consignee Acc No" maxlength="15" tabindex="16"/></td>
+									</tr>
+									<tr>
+										<td><label style="font-size:15px;">Address:</label></td>
+										<td colspan="3"><input type="text" style="width:96%" name="txtConsigneeAddress1" id="txtConsigneeAddress1" title="Consignee Address" maxlength="50" tabindex="17"/></td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td><input type="text" style="width:220px" name="txtConsigneeAddress2" id="txtConsigneeAddress2" title="Consignee Address" maxlength="50" tabindex="18"/></td>
+										<td><label style="font-size:15px;">Country:</label></td>
+										<td><input type="text" style="width:120px" name="txtConsigneeCountry" id="txtConsigneeCountry" title="Consignee Country" maxlength="25" tabindex="19"/></td>
+									</tr>
+									<tr>
+										<td colspan=4>
+											<table style="width:100%" cellspacing="0" cellpadding="1">
+											<tr>
+												<td ><label style="font-size:15px;">State:</label></td>
+												<td style="text-align: right;"><input type="text" style="width:100px" name="txtConsigneeState" id="txtConsigneeState" title="Consignee State" maxlength="2" tabindex="20"/></td>
+												<td><label style="font-size:15px;">City:</label></td>
+												<td><input type="text" style="width:100px" name="txtConsigneeCity" id="txtConsigneeCity" title="Consignee City" maxlength="25" tabindex="21"/></td>
+												<td><label style="font-size:15px;">Postal Code:</label></td>
+												<td><input type="text" style="width:120px" name="txtConsigneePostalCode" id="txtConsigneePostalCode" title="Consignee Postal Code" maxlength="10" tabindex="22"/></td>
+											</tr>
+											<tr>
+												<td><label style="font-size:15px;text-align: right;">Phone:</label></td>
+												<td style="text-align: right;"><input type="text" style="width:100px" name="txtConsigneePhone" id="txtConsigneePhone" title="Consignee Phone" maxlength="15" tabindex="23"/></td>
+												<td><label style="font-size:15px;">Fax:</label></td>
+												<td><input type="text" style="width:100px" name="txtConsigneeFax" id="txtConsigneeFax" title="Consignee Fax" maxlength="15" tabindex="24"/></td>
+												<td><label style="font-size:15px;">Email:</label></td>
+												<td><input type="text" style="width:120px" name="txtConsigneeEmail" id="txtConsigneeEmail" title="Consignee Email" maxlength="50" tabindex="25"/></td>
+											</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+	
+				<td width="50%" class="leftBorder topBorder">
+					<div>
+					<table style="width:100%;" cellspacing="0" cellpadding="1" >
+						<tr>
+							<td colspan="4" class="smallText">
+							<p class="firstpar">
+								It is agreed that the goods describes herein are accepted in apparednt order and condition
+								(expect as noted) for carriage SUBJECT TO THE CONDITIONS OF CONTRACT ON THE REVERSE
+								HEREOD ALL GOODS MAY BE CARRIED BY ANY OTHER MEANS INCLUDING ROAD OR ANY SHIPPER,
+								AND SHIPPER AGREES THAT THE SHIPMENT MAY BE CARRIED VIA INTERMEDIATE STOPPING
+								PLACES WHICH THE CARRIER DEEMS APPROPRIATE THE SHIPPER'S ATTENTION IS DRAWN TO THE
+								NOTICE CONCERING CARRIER'S LIMITATION OF LIABILITY.Shipper may increase such limitation of
+								liability by declaring a higher value for carriage and paying a supplemental charge if required.
+							</p>
+							</td>
+						</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+	<!-- ROW 3 -->
+			<tr>
+				<td width="50%" class="rightBorder">
+					<table width="100%" bgcolor="" cellspacing="0" cellpadding="1" class="bottomBorder">
+						<tr align="top">
+							<td class="BoldText" colspan="4" style="font-weight:bold">Issuing Carrier's Agent Name and City</td>
+						</tr>
+						<tr align="top" >
+							<td colspan="4" class="bottomBorder"> 
+								<table style="width:100%;" cellspacing="1" cellpadding="1" >
+									<tr>
+										<td width="15%"><label style="font-size:15px;">Name:</label></td>
+										<td width="70%"><input type="text" style="width:400px" title="Issuing Carrier's Agent Name" name="txtIssuingCarrierName" id="txtIssuingCarrierName" tabindex="26" maxlength="30"/></td>
+									</tr>
+									<tr>
+										<td><label style="font-size:15px;">City:</label></td>
+										<td><input type="text" style="width:220px" title="Issuing Carrier's Agent City" name="txtIssuingCarrierCity" id="txtIssuingCarrierCity" tabindex="27" maxlength="25"/></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" colspan="2">
+								<table style="width:100%" cellspacing="0" cellpadding="1" >
+								<tr>
+									<td class="rightBorder"><label style="font-size:15px;">Agents IATA Code:</label></td>
+									<td><label style="font-size:15px;">Account No.</label></td>
+								</tr>
+								<tr>
+									<td class="rightBorder" style="text-align:center;"><input type="text" title="Agents IATA Code" style="width:150px" name="txtAgentsIATACode" id="txtAgentsIATACode" tabindex="28" maxlength="12"/></td>
+									<td style="text-align:center;"><input type="text" style="width:150px" title="Agents Account No" name="txtAgentsAccountNo" id="txtAgentsAccountNo" tabindex="29" maxlength="30"/></td>
+								</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+	
+				<td width="50%" class="topBorder">
+					<div>
+					<table style="width:100%;" cellspacing="0" cellpadding="0" >
+						<tr>
+							<td class="">
+								<label style="font-size:15px;">Accounting Info</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<textarea rows="6" cols="20" name="txtAccoutingInfo" id="txtAccoutingInfo" title="Accounting Info" title="Accouting Info" tabindex="50" maxlength="400"></textarea>
+							</td>
+						</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+	<!-- ROW 4 -->
+			<tr>
+				<td width="50%" class="rightBorder">
+					<div>
+					<table style="width:100%;" cellspacing="1" cellpadding="1" >
+						<tr>
+							<td colspan="2">
+								<label style="font-size:15px;">Airport of Departure(Addr. of First Carrier) and Requested Routing.</label>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+							<td><input type="text" style="width:320px" title="Airport of Departure(Addr. of First Carrier) and Requested Routing." name="txtAirportOfDeparture" id="txtAirportOfDeparture" tabindex="30" maxlength="50"/></td>
+						</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+	<!-- ROW 5 -->
+			<tr>
+				<td width="50%" class="topBorder rightBorder">
+					<div style="width:100%;">
+					<table style="width:100%;" cellspacing="0" cellpadding="1">
+						<tr>
+							<td class="rightBorder"><label style="font-size:15px;">To.</label></td>
+							<td>
+								<label style="font-size:15px;">By First </label>
+								<div class="tr" style="width:200px;">
+									Routing and Dest.
+								</div>
+							</td>
+							<td class="rightBorder leftBorder"><label style="font-size:15px;">to</label></td>
+							<td class="rightBorder"><label style="font-size:15px;">by</label></td>
+							<td class="rightBorder"><label style="font-size:15px;">to</label></td>
+							<td class="rightBorder"><label style="font-size:15px;">by</label></td>
+							<td><label style="font-size:15px;">&nbsp;</label></td>
+						</tr>
+						<tr>
+							<td class="rightBorder"><input type="text" class="smallTextBox1" title="To" name="txtTo" id="txtTo" maxlength="3" tabindex="31" value="117"/></td>
+							<td><input type="text" class="smallTextBox1" name="txtByFirstCarrier" id="txtByFirstCarrier" title="By First Carrier" maxlength="2" tabindex="32"/><label style="font-size:15px;">Carrier.</label></td>
+							<td class="rightBorder leftBorder"><input type="text" class="smallTextBox1"  value="117" name="txtTo1" id="txtTo1" title="To" maxlength="3" tabindex="33" /></td>
+							<td class="rightBorder"><input type="text" class="smallTextBox1"  value="117" name="txtBy1" id="txtBy1" title="By" maxlength="2" tabindex="34"/></td>
+							<td class="rightBorder"><input type="text" class="smallTextBox1"  value="117" name="txtTo2" id="txtTo2" title="To" maxlength="3" tabindex="35"/></td>
+							<td class="rightBorder"><input type="text" class="smallTextBox1"  value="117" name="txtBy2" id="txtBy2" title="By" maxlength="2" tabindex="36"/></td>
+							<td><input type="button"  class="routingButton" value="+" tabindex="37"/></td>
+						</tr>
+					</table>
+					</div>
+				</td>
+				<td width="50%" class="topBorder">
+					<div>
+					<table style="width:100%;" cellspacing="0" cellpadding="1" >
+						<tr>
+							<td width="5%" class="rightBorder"><label style="font-size:15px;">Curr</label></td>
+							<td width="5%" class="rightBorder"><label style="font-size:15px;">ChgCode</label></td>
+							<td width="4%" class="rightBorder"><label style="font-size:12px;">WT/VAL</label></td>
+							<td width="4%" class="rightBorder"><label style="font-size:15px;">Other</label></td>
+							<td width="25%" class="rightBorder"><label style="font-size:13px;">Declared Value for Carriage</label></td>
+							<td width="25%"><label style="font-size:13px;">Declared Value for Customs</label></td>
+						</tr>
+						<tr>
+							<td class="rightBorder"><input type="text" class="smallTextBox1" value="117" name="txtCurrency" id="txtCurrency" title="Currency" maxlength="3" tabindex="51" /></td>
+							<td class="rightBorder">
+								<select style="width:50px" title="Charge Code" name="txtChargeCode" id="txtChargeCode" title="CHG Code" maxlength="2" tabindex="52">
+									<option value="PP">PP</option>
+									<option value="CC">CC</option>
+								</select>
+							</td>
+							<td class="rightBorder">
+								<select style="width:40px" title="WT/VAL" name="txtWTVAL" id="txtWTVAL" disabled title="WT/VAL" maxlength="1" tabindex="53">
+									<option value="P" selected>P</option>
+									<option value="C">C</option>
+								</select>
+							</td>
+							<td class="rightBorder">
+								<select style="width:40px" title="Other" name="txtOther" id="txtOther" disabled title="Others" maxlength="1" tabindex="54">
+									<option value="P" selected>P</option>
+									<option value="C">C</option>
+								</select>
+							</td>
+							<td class="rightBorder"><input type="number" min="0" style="width:100px" name="txtDeclaredValueCarriage" id="txtDeclaredValueCarriage" value="117" title="Declared Value for Carriage" maxlength="10" tabindex="55"/></td>
+							<td><input type="number" min="0" style="width:100px" name="txtDeclaredValueCustoms" id="txtDeclaredValueCustoms" value="117" title="Declared Value for Customs" maxlength="10" tabindex="56"/></td>
+						</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+	<!-- ROW 6 -->		
+			<tr>
+				<td width="50%" class="topBorder rightBorder">
+					<div>
+					<table style="width:100%;" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="50%">
+								<table style="width:100%;" cellspacing="0" cellpadding="3" class="rightBorder">
+								<tr><td><label style="font-size:15px;">Airport of Destination</label></td>
+									<td><label style="font-size:15px;">Code:</label></td>
+								</tr>
+								<tr>
+									<td><input type="text" style="width:160px" name="txtAirportOfDestination" id="txtAirportOfDestination" title="Airport of Destination" tabindex="38" maxlength="50"/></td>
+									<td><input type="text" style="width:80px" name="txtCode" id="txtCode" title="Code" tabindex="39" maxlength="3"/></td>
+								</tr>
+								</table>	
+							</td>
+							<td width="50%">
+								<table style="width:100%;" cellspacing="0" cellpadding="1">
+								<tr><td colspan="1" style="text-align:right"><input type="text" class="smallTextBox1" value="SK" title="Flight Designator" tabindex="40" maxlength="2" name="txtFlightDesignator1" id="txtFlightDesignator1"/></td>
+									<td colspan="4"><div class="tr" style="width:160px">Requested Flight.</div></td>
+									<td><input type="text" name="txtFlightDesignator2" id="txtFlightDesignator2" class="smallTextBox1"  value="SK" title="Flight Designator" tabindex="43" maxlength="2"/></td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="text" style="width:50px" title="Flight Number" name="txtFlightNumber1" id="txtFlightNumber1" tabindex="41" maxlength="6"/>
+									</td>
+									<td><label style="font-size:15px;">/</label></td>
+									<td class="rightBorder"><input type="text" style="width:30px" title="Date" name="txtFlightDate1" id="txtFlightDate1" tabindex="42" maxlength="2"/></td>
+									<td style="text-align:right">
+										<input type="text" style="width:50px" title="Flight Number" name="txtFlightNumber2" id="txtFlightNumber2" tabindex="44" maxlength="6"/>
+									</td>
+									<td><label style="font-size:15px;">/</label></td>
+									<td><input type="text" class="smallTextBox1" name="txtFlightDate2" id="txtFlightDate2" value="SK" title="Date" tabindex="45" maxlength="2"/></td>
+									<td><input type="button" class="requestedFlight" value="+" tabindex="46"/></td>
+								</tr>
+								</table>	
+							</td>
+						</tr>
+					</table>
+					</div>
+				</td>
+				<td width="50%" class="topBorder">
+					<div>
+					<table style="width:100%;" cellspacing="0" cellpadding="1" >
+						<tr>
+							<td class="rightBorder" style="width:30%">
+								<table style="width:100%;" cellspacing="0" cellpadding="1">
+									<tr>
+										<td><label style="font-size:15px;">Amount of Insurance</label></td>
+									</tr>
+									<tr>
+										<td><input type="text"  style="width:100px" name="txtAmountOfInsurance" id="txtAmountOfInsurance" value="117" title="Amount of Insurance" tabindex="58" maxlength="10"/></td>
+									</tr>
+								</table>
+							</td>
+							<td><p class="firstpar" style="font-size:11px">INSURANCE - if Carrier offers Insurance and such Insurance is
+							requested in accordancce with the conditions thereof, indicate amount
+							to be insured in figures in box marked "amount of isnurance".</p></td>
+						</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+	<!-- ROW 7 -->
+			<tr>
+				<td width="100%" colspan="2" class="topBorder">
+					<div style="width:100%">
+					<table style="width:100%;" cellspacing="0" cellpadding="1" >
+						<tr>
+							<td width="70%">
+								<table style="width:100%;" cellspacing="0" cellpadding="1" >
+									<tr><td><label style="font-size:15px;">Handling Information</label></td></tr>
+									<tr><td><textarea style="width:98%" rows="3" cols="100" name="txtHandlingInformation" id="txtHandlingInformation" title="Handling Information" tabindex="59" maxlength="400"></textarea></td></tr>
+								</table>
+							</td>
+							<td width="25%">
+								<table style="width:100%;" cellspacing="0" cellpadding="1" >
+									<tr><td colspan="2" class=""><label style="font-size:15px;">Customs Number</label></td></tr>
+									<tr><td valign="top"><input type="text"  style="width:225px" name="txtCustomsNumber" id="txtCustomsNumber" title="Customs Number" tabindex="60" maxlength="20" value="117"/></td></tr>
+									<tr><td class="topLeftBorder" height="20px;" style="text-align:center;"><label style="font-size:15px;">SCI</label></td></tr>
+									<tr><td class="leftBorder" height="20px;" class="">
+											<center>
+												<select style="width:60px" title="SCI" name="txtSCI" id="txtSCI" title="SCI" tabindex="61" maxlength="2" >
+													<option value="T1">T1</option>
+													<option value="t2">T2</option>
+												</select>
+											</center>
+										</td></tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+	<!-- ROW 8 -->
+			<tr>
+				<td width="100%" colspan="2" class="">
+					<div style="width:100%;background-color:grey;">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<!-- ROW-1 -->
+						<td>
+							<table width="100%" border="0" cellspacing="1" cellpadding="1" class="border">
+								<tr><td><label class="font15">No of</label></td></tr>
+								<tr><th><label class="font15">Pieces</label></th></tr>
+							    
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0" value="1111" tabindex="62"/></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0" value="6666"/></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0" /></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0"/></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0"/></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0"/></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0"/></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0"/></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0"/></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0"/></td></tr>
+								<tr><td><input type="number" class="width40 pieces" name="txtPieces" id="txtPieces" title="No Of Pieces" maxlength="4" min="0"/></td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td class="topBorder"><input type="number" title="" class="width40 sumPieces" title="Total Pieces" name="txtSumPieces" id="txtSumPieces" readonly/></td></tr>
+							</table>
+						</td>
+						
+						<!-- ROW-2 -->
+						<td>
+							<table width="100%" border="0" cellspacing="1" cellpadding="1" class="border">
+								<tr><td><label class="font15">Gross</label></td></tr>
+								<tr><th><label class="font15">Weight</label></th></tr>
+								
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7" tabindex="63"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td><input type="number" class="width70 gweight" name="txtGrossWeight" id="txtGrossWeight" title="Gross Weight" min="0" maxlength="7"/></td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td class="topBorder"><input type="number" class="width70 sumGrossWeight" name="txtSumGrossWeight" id="txtSumGrossWeight" readonly/></td></tr>
+							</table>
+						</td>
+						
+						<!-- ROW-3 -->
+						<td>
+						    <table width="100%" border="0" cellspacing="1" cellpadding="1" class="border">
+								<tr><td><label class="font13">KG</label></td></tr>
+								<tr><th><label class="font13">LB</label></th></tr>
+								
+								<tr><td><select class="width30" title="KG/LB" tabindex="64">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>
+								<tr><td><select class="width30" title="KG/LB">
+									<option value="KG" selected>KG</option>
+									<option value="LB">LB</option>
+								</select></td></tr>	
+								<tr><td class="topWhiteBorder" style="border-top: 2px solid #fff;">&nbsp;</td></tr>
+								<tr><td class="topWhiteBorder">&nbsp;</td></tr>								
+							</table>
+						</td>
+						
+						<!-- Grey Space -->
+						<td>&nbsp;</td>
+						
+						<!-- ROW-4 -->
+						<td>
+						   <table width="100%" border="0" cellspacing="1" cellpadding="1" class="border">
+								<tr><td colspan="2" style="text-align:left !important"><label class="font15">Rate Class</label></td></tr>
+								<tr><th colspan="2" style="text-align:right !important"><label class="font15">Commodity Item</label></th></tr>
+								
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass" tabindex="65">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70"  tabindex="66"/></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td><select class="width30" title="Rate Class" name="txtRateClass" id="txtRateClass">
+											<option value="M" selected>M</option>
+											<option value="N">N</option>
+											<option value="Q">Q</option>
+											<option value="SM">SM</option>
+										</select>
+									</td>
+									<td><input type="number" title="Commodity Item No" name="txtCommodityItemNo" id="txtCommodityItemNo" maxlength="7" min="0"  class="width70" /></td>
+								</tr>
+								<tr><td colspan="2">&nbsp;</td></tr>
+								<tr><td colspan="2" class="topWhiteBorder">&nbsp;</td></tr>
+							</table>
+						</td>
+						
+						<!-- Grey Space -->
+						<td>&nbsp;</td>
+						
+						<!-- ROW-5 -->
+						<td>
+							<table width="100%" border="0" cellspacing="1" cellpadding="1" class="border">
+								<tr><td><label class="font15">Chargeable</label></td></tr>
+								<tr><th><label class="font15">Weight</label></th></tr>
+								
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70" tabindex="67"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td><input type="number" title="Chargeable weight" name="txtChargeableWeight" id="txtChargeableWeight" maxlength="7" min="0"  class="width70"/></td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td class="topWhiteBorder">&nbsp;</td></tr>
+							</table>
+						</td>
+						
+						<!-- Grey Space -->
+						<td>&nbsp;</td>
+						
+						<!-- ROW-6 -->
+						<td>
+						   <table width="100%" border="0" cellspacing="1" cellpadding="1" class="border">
+								<tr><td><label class="font15">Rate</label></td></tr>
+								<tr><th><label class="font15">Charge</label></th></tr>
+								
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" tabindex="68"/></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td><input type="text" class="width70" title="Rate/ Charge" name="txtRateCharge" id="txtRateCharge" maxlength="8" min="0" /></td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td class="topWhiteBorder">&nbsp;</td></tr>
+							</table>
+						</td>
+						
+						<!-- Grey Space -->
+						<td>&nbsp;</td>
+						
+						<!-- ROW-7 -->
+						<td>
+							<table width="100%" border="0" cellspacing="1" cellpadding="1" class="border">
+								<tr><td><label class="font15">Totals</label></td></tr>
+								<tr><th>&nbsp;</th></tr>
+								
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12" tabindex="69"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td><input type="number" class="width100 totals" name="txtTotals" id="txtTotals" title="Totals" min="0" maxlength="12"/></td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td class="topBorder"><input type="text" class="width100 sumTotals" name="txtSumTotals" id="txtSumTotals" title="Sum Totals" readonly/></td></tr>
+							</table>
+						</td>
+						
+						<!-- Grey Space -->
+						<td>&nbsp;</td>
+						
+						<!-- ROW-8 -->
+						<td>
+						    <table width="100%" border="0" cellspacing="1" cellpadding="1" class="border">
+								<tr><td colspan="2"><label class="font15">Nature and Quality of Goods</label></td></tr>
+								<tr><th colspan="2"><label class="font15">(in Dimensions and Volume)</label></th></tr>
+								
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1" tabindex="76">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="right"><select class="width301" title="Nature & Quality of Goods" name="txtGoodsInfo" id="txtGoodsInfo" maxlength="1">
+											<option value="G">G</option><option value="D">D</option><option value="V">V</option>
+										</select>
+									</td>
+									<td class="G left"><input type="text" class="width140" title="General Information" id="txtGeneralInformation" name="txtGeneralInformation" maxlength="50"  /></td>
+									<td class="D left"><input type="number" class="width40" title="Length" name="txtLength" id="txtLength" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Width" name="txtWidth" id="txtWidth" maxlength="2" min="0"/>
+										<input type="text" class="width40" class="width40" title="Height" name="txtHeight" id="txtHeight" maxlength="2" min="0"/>
+										<select class="width302" title="Dimensions Unit" name="txtDimensionsUnit" id="txtDimensionsUnit" maxlength="2">
+											<option value="CM">CM</option>
+											<option value="IN">IN</option>
+										</select>
+										<input type="text" class="width40" title="PC's" name="txtPcs" id="txtPcs" maxlength="2" min="0"/>
+									</td>
+									<td class="V left">
+										<input type="number" class="width200" name="txtVolume" title="Volume" id="txtVolume" maxlength="5" min="0"/>
+										<select class="width302" title="Volume Unit" name="txtVolumeUnit" id="txtVolumeUnit" maxlength="2">
+											<option value="MC">MC</option>
+											<option value="CF">CF</option>
+										</select>
+									</td>
+								</tr>
+								<tr><td class="topWhiteBorder">&nbsp;</td></tr>
+								<tr><td class="topWhiteBorder">&nbsp;</td></tr>									
+							</table>
+						</td>
+						
+					</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+	<!-- ROW 9 -->		
+			<tr>
+				<td width="100%" colspan="2" class="topBorder">
+					<div style="width:100%">
+					<table style="width:100%;" cellspacing="0" cellpadding="1" >
+						<!-- ROW 1 -->
+						<tr>
+							<td width="40%">
+								<table style="width:100%;" cellspacing="0" cellpadding="2" >
+									<tr>
+										<td><div class="t1" style="width:150px">
+												Prepaid
+											</div></td>
+										<td><div class="t1" style="width:150px">
+												Weight
+											</div></td>
+										<td><div class="t1" style="width:150px">
+												Collect
+											</div></td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<div class="first-half">
+												<input type="text" class="prepaid sumTotalsPrepaid" style="width:120px"  value="117" title="Total Weight Prepaid" maxlength="" name="txtTotalPrepaidWeight" id="txtTotalPrepaidWeight"/>
+											</div>
+											<div class="second-half">
+												<input type="text" class="collect sumTotalsCollect" style="width:120px"  value="117" title="Total Weight Collect" maxlength="" name="txtTotalCollectWeight" id="txtTotalCollectWeight"/>
+											</div>
+										</td>
+									</tr>
+									
+									<tr>
+										<td class="topBorder" style="text-align:center" colspan="3"><div class="t1" style="width:250px">
+												Valuation
+											</div></td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<div class="first-half">
+												<input type="text" class="prepaid" style="width:120px"  value="117" title="Total Valuation Prepaid" maxlength="7" name="txtTotalValuationWeight" id="txtTotalValuationWeight"/>
+											</div>
+											<div class="second-half">
+												<input type="text" class="collect" style="width:120px"  value="117" title="Total Valuation Collect" maxlength="7" name="txtTotalValuationCollect" id="txtTotalValuationCollect"/>
+											</div>
+										</td>
+									</tr>
+									
+									<tr>
+										<td class="topBorder" style="text-align:center" colspan="3"><div class="t1" style="width:150px">
+												Tax
+											</div></td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<div class="first-half">
+												<input type="text" class="prepaid" style="width:120px"  value="117" value="117" title="Total Tax Prepaid" maxlength="7" name="txtTotalTaxPrepaid" id="txtTotalTaxPrepaid"/>
+											</div>
+											<div class="second-half">
+												<input type="text" class="collect" style="width:120px"  value="117" title="Total Tax Collect" maxlength="7" name="txtTotalTaxCollect" id="txtTotalTaxCollect"/>
+											</div>
+										</td>
+									</tr>
+									
+								</table>
+							</td>
+							
+							<td width="60%" class="leftBorder">
+								<table style="width:100%;" cellspacing="0" cellpadding="0" >
+									<tr>
+										<td colspan="11"><label style="font-size:15px;">Other Charges</label></td>
+									</tr>
+									<tr>
+										<!--ROW 1 -->
+										<td><table width="100%" border="0" cellspacing="0" cellpadding="1" class="border1">
+												<tr><th><label class="font15">Charge Code</label></th></tr>
+												
+												<tr><td><input type="text" class="width40" tabindex="70" title="Charge Code" name="txtChargeCode" id="txtChargeCode" maxlength="2"/></td></tr>
+												<tr><td><input type="text" class="width40" title="Charge Code" name="txtChargeCode" id="txtChargeCode" maxlength="2"/></td></tr>
+												<tr><td><input type="text" class="width40" title="Charge Code" name="txtChargeCode" id="txtChargeCode" maxlength="2"/></td></tr>
+												<tr><td><input type="text" class="width40" title="Charge Code" name="txtChargeCode" id="txtChargeCode" maxlength="2"/></td></tr>
+												<tr><td><input type="text" class="width40" title="Charge Code" name="txtChargeCode" id="txtChargeCode"maxlength="2"/></td></tr>
+												<tr>&nbsp;</tr>
+										</table></td>
+										
+										<!--ROW 2 -->
+										<td><table width="100%" border="0" cellspacing="0" cellpadding="1" class="border1">
+												<tr><th><label class="font15">Due</label></th></tr>
+												
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue1" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue2" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue3" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue4" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue5" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr>&nbsp;</tr>
+										</table></td>
+										
+										<!--ROW 3 -->
+										<td><table width="100%" border="0" cellspacing="0" cellpadding="1" class="border1">
+												<tr><th><label class="font15">Amount</label></th></tr>
+												
+												<tr><td><input type="number" class="width40 txtDue1 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount1" min="0" /></td></tr>
+												<tr><td><input type="number" class="width40 txtDue2 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount2" min="0" /></td></tr>
+												<tr><td><input type="number" class="width40 txtDue3 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount3" min="0" /></td></tr>
+												<tr><td><input type="number" class="width40 txtDue4 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount4" min="0" /></td></tr>
+												<tr><td><input type="number" class="width40 txtDue5 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount5" min="0" /></td></tr>
+												<tr>&nbsp;</tr>
+										</table></td>
+										
+										<td>&nbsp;&nbsp;</td>
+										<td>&nbsp;&nbsp;</td>
+										<td>&nbsp;&nbsp;</td>
+										<td>&nbsp;&nbsp;</td>
+										<td>&nbsp;&nbsp;</td>
+										<!--ROW 1 -->
+										<td><table width="100%" border="0" cellspacing="0" cellpadding="1" class="border1">
+												<tr><th><label class="font15">Charge Code</label></th></tr>
+												
+												<tr><td><input type="text" class="width40" title="Charge Code" name="txtChargeCode" id="txtChargeCode" maxlength="2"/></td></tr>
+												<tr><td><input type="text" class="width40" title="Charge Code" name="txtChargeCode" id="txtChargeCode" maxlength="2"/></td></tr>
+												<tr><td><input type="text" class="width40" title="Charge Code" name="txtChargeCode" id="txtChargeCode" maxlength="2"/></td></tr>
+												<tr><td><input type="text" class="width40" title="Charge Code" name="txtChargeCode" id="txtChargeCode" maxlength="2"/></td></tr>
+												<tr><td><input type="text" class="width40" title="Charge Code" name="txtChargeCode" id="txtChargeCode"maxlength="2"/></td></tr>
+												<tr>&nbsp;</tr>
+										</table></td>
+										
+										<!--ROW 2 -->
+										<td><table width="100%" border="0" cellspacing="0" cellpadding="1" class="border1">
+												<tr><th><label class="font15">Due</label></th></tr>
+												
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue6" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue7" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue8" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue9" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr><td><select class="width402" title="Due" name="txtDue" id="txtDue10" maxlength="1">
+														<option value="C">C</option>
+														<option value="A">A</option>
+													</select></td></tr>
+												<tr>&nbsp;</tr>
+										</table></td>
+										
+										<!--ROW 3 -->
+										<td><table width="100%" border="0" cellspacing="0" cellpadding="1" class="border1">
+												<tr><th><label class="font15">Amount</label></th></tr>
+												
+												<tr><td><input type="number" class="width40 txtDue6 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount6" min="0" /></td></tr>
+												<tr><td><input type="number" class="width40 txtDue7 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount7" min="0" /></td></tr>
+												<tr><td><input type="number" class="width40 txtDue8 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount8" min="0" /></td></tr>
+												<tr><td><input type="number" class="width40 txtDue9 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount9" min="0" /></td></tr>
+												<tr><td><input type="number" class="width40 txtDue10 Carrier" maxlength="10" title="Amount" name="txtAmount" id="txtAmount10" min="0" /></td></tr>
+												<tr>&nbsp;</tr>
+										</table></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						
+						<!-- ROW 2 -->
+						<tr>
+							<td width="40%">
+								<table style="width:100%;" cellspacing="0" cellpadding="2" class="greyTable" >
+								<tbody>
+									<tr>
+										<td class="topBorder" style="text-align:center" colspan="3"><div class="t1" style="width:300px">
+												Total Other Charge due Agent
+											</div></td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<div class="first-half">
+												<input type="text" class="prepaid sumPrepaidAgent" style="width:120px"  value="117" title="Total Prepaid Other Charge due Agent" name="txtTotalPrepaidOtherChargeDueAgent" id="txtTotalPrepaidOtherChargeDueAgent"  />
+											</div>
+											<div class="second-half">
+												<input type="text" class="collect sumCollectAgent" style="width:120px"  value="117" title="Total Collect Other Charge due Agent" name="txtTotalCollectOtherChargeDueAgent" id="txtTotalCollectOtherChargeDueAgent" />
+											</div>
+										</td>
+									</tr>
+									
+									<tr>
+										<td class="topBorder" style="text-align:center" colspan="3"><div class="t1" style="width:300px">
+												Total Other Charge due Carrier
+											</div></td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<div class="first-half">
+												<input type="text" class="prepaid sumPrepaidCarrier"  style="width:120px"  value="117" title="Total Prepaid Other Charge due Carrier" name="txtTotalPrepaidOtherChargeDueCarrier" id="txtTotalPrepaidOtherChargeDueCarrier" />
+											</div>
+											<div class="second-half">
+												<input type="text" class="collect sumCollectCarrier" style="width:120px"  value="117" title="Total Collect Other Charge due Carrier" name="txtTotalCollectOtherChargeDueCarrier" id="txtTotalOtherChargeDueCarrier"/>
+											</div>
+										</td>
+									</tr>
+									
+									<tr rowspan="3">
+										<th class="topBorder" colspan="3">&nbsp;</th>
+									</tr>
+									<tr rowspan="3">
+										<th colspan="3">&nbsp;</th>
+									</tr>
+									<tr rowspan="3">
+										<th colspan="3">&nbsp;</th>
+									</tr>
+								</tbody>
+								</table>
+							</td>
+							
+							<td width="60%" class="leftBorder">
+								<table style="width:100%;" cellspacing="0" cellpadding="0" >
+									<tr>
+										<td colspan="11" class="topBorder">
+											<table width="100%" border="0" cellspacing="0" cellpadding="1" >
+												<tr>
+													<td colspan="2" style="font-size:13px"><p class="firstpar">Shipper certifies that the particulars on the face hereof are correct and that insofar as any part of the consigment
+													contains dangerous goods,such part is properly described by name and is in proper condition for carriage by air according
+													to the applicable Dangerous Goods Regulations.</p></td>
+												</tr>
+												<tr>
+													<!--<td colspan="5">  </td> -->
+													<td colspan="2"><input type="text" style="width:450px"/></td>
+												</tr>
+												<tr>
+													<!--<td colspan="5">  </td> -->
+													<td colspan="2"><input type="text" style="width:450px"/></td>
+												</tr>
+												<tr>
+													<td colspan="1" width="40%"> &nbsp; </td> 
+													<td colspan="1"><input type="text" style="width:275px"/></td>
+												</tr>
+												<tr>
+													
+													<td colspan="2" ><hr class="dottedBorder"/></td>
+												</tr>
+												<tr>
+													<td colspan="2" style="text-align:center"><label class="font15" >Signature of Shipper or his Agent</label></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					
+						<!-- ROW 3 -->
+						<tr>
+							<td width="40%" class="topBorder">
+								<table style="width:100%;" cellspacing="0" cellpadding="2" >
+									<tr >
+										<td  style="text-align:center" colspan="3">
+										<div class="t1" style="width:200px"> Total Prepaid</div> 
+										
+										<div class="t1" style="width:200px"> Total Collect</div></td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<div class="first-half">
+												<input type="text" class="sumTotalPrepaid" name="txtSumTotalPrepaid" id="txtSumTotalPrepaid" style="width:120px"  value="117"/>
+											</div>
+											<div class="second-half">
+												<input type="text" class="sumTotalCollect" name="txtSumTotalCollect" id="txtSumTotalCollect" style="width:120px"  value="117"/>
+											</div>
+										</td>
+									</tr>
+									
+									<tr>
+										<td class="topBorder" style="text-align:center" colspan="3">
+										<div class="t1" style="width:200px"> Currency Conversion</div> 
+										
+										<div class="t1" style="width:200px"> CC Charges in Dest.</div></td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<div class="first-half">
+												<input type="text"  style="width:120px" tabindex="74" maxlength="12" value="117"/>
+											</div>
+											<div class="second-half">
+												<input type="text"  style="width:120px" tabindex="75" maxlength="12" value="117"/>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+							
+							<td width="60%" class="leftBorder">
+								<table style="width:100%;" cellspacing="0" cellpadding="0" >
+									<tr>
+										<td colspan="11" class="topBorder">
+											<table width="100%" border="0" cellspacing="0" cellpadding="1" >
+												<tr><td colspan="3"> &nbsp; </td> </tr>
+												<tr><td colspan="3"><input type="text" style="width:450px"/></td></tr>
+												<tr>
+													<td><input type="text" style="width:100px" class="date_picker" title="Executed Date" tabindex="77" name="txtExecutedDate" id="txtExecutedDate" /></td> 
+													<td><input type="text" style="width:155px" tabindex="78" maxlength="17" title="At Place" name="txtAtPlace" id="txtAtPlace" /></td>
+													<td><input type="text" style="width:170px" tabindex="79" maxlength="20"/>&nbsp;<input type="text" style="width:150px" title="At Place" name="txtAtPlace" id="txtAtPlace"/></td>
+												</tr>
+												<tr><td colspan="3" ><hr class="dottedBorder"/></td></tr>
+												<tr>
+													<td style="text-align:center"><label class="font15" >Executed on (Date)</label></td>
+													<td style="text-align:center"><label class="font15" >At (Place)</label></td>
+													<td style="text-align:center"><label class="font15" >Signature of Issuing Carrier or its Agent</label></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						
+						<!-- ROW 4 -->
+						<tr>
+							<td width="40%">
+								<table style="width:100%;" cellspacing="0" cellpadding="2" >
+									<tr>
+										<td class="topRightBorder" style="text-align:center"><label class="font15">
+										For Carrier's Use Only
+										</label></td>
+										<td class="topBorder" style="text-align:center" >
+										<div class="t1" style="width:130px"> Charges At</div></td>
+									</tr>
+									
+									<tr>
+										<td class="rightBorder" style="text-align:center">
+											At Destination</td>
+										<td  style="text-align:center">
+											<input type="text"  style="width:120px"  value="117"/>
+										</td>
+									</tr>
+								</table>
+							</td>
+							
+							<td width="60%" class="leftBorder">
+								<table style="width:100%;" cellspacing="0" cellpadding="0" >
+									<tr>
+										<td colspan="1" class="topBorder">
+											<table width="100%" border="0" cellspacing="0" cellpadding="1" >
+												<tr>
+													<td style="text-align:left" colspan="3"><div class="t1" style="width:150px">
+														Total Collect
+													</div></td>
+												</tr>
+												<tr><td style="text-align:left"><input type="text"  style="width:120px"  value="117"/></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+	<!-- ROW 10 -->	
+		<tr>
+	<!-- POPUP DIV's -->
+		<td>
+		<div id="fade" class="popup black_overlay">
+	
+		</div>	
+		<div id="light" class="popup white_content">
+			<div class="popup routingTablePopup">
+			<table style="width:100%;" cellspacing="0" cellpadding="1">
+				<tr rowspan="3">
+					<th class="BeGrey" colspan="3"><label class="subTableHeading">Routing And Destination</label></th>
+					<th style="text-align:right" colspan="1"><input type="button" class="close" value="X"/></th>
+				</tr>
+				<tr>
+					<td class=""><label style="font-size:15px;">To</label></td>
+					<td class=""><label style="font-size:15px;">By</label></td>
+					<td class=""><label style="font-size:15px;">To</label></td>
+					<td class=""><label style="font-size:15px;">By</label></td>
+				</tr>
+				<tr>
+					<td class=""><input type="text" class="smallTextBox1" value="117" name="txtTo3" id="txtTo3"/></td>
+					<td class=""><input type="text" class="smallTextBox1" value="117" name="txtBy3" id="txtBy3"/></td>
+					<td class=""><input type="text" class="smallTextBox1" value="117" name="txtTo4" id="txtTo4"/></td>
+					<td class=""><input type="text" class="smallTextBox1" value="117" name="txtBy4" id="txtBy4"/></td>
+				</tr>
+				<tr>
+					<td class=""><label style="font-size:15px;">To</label></td>
+					<td class=""><label style="font-size:15px;">By</label></td>
+					<td class=""><label style="font-size:15px;">To</label></td>
+					<td class=""><label style="font-size:15px;">By</label></td>
+				</tr>
+				<tr>
+					<td class=""><input type="text" class="smallTextBox1" value="117" name="txtTo5" id="txtTo5"/></td>
+					<td class=""><input type="text" class="smallTextBox1" value="117" name="txtBy5" id="txtBy5"/></td>
+					<td class=""><input type="text" class="smallTextBox1" value="117" name="txtTo6" id="txtTo6"/></td>
+					<td class=""><input type="text" class="smallTextBox1" value="117" name="txtBy6" id="txtBy6"/></td>
+				</tr>
+			</table>
+			</div>
+			<div class="requestedFilghtTablePopup" style="display:none">
+			<table style="width:100%;" cellspacing="0" cellpadding="1" >
+				<tr rowspan="3">
+					<th class="BeGrey" colspan="3"><label class="subTableHeading">Requested Flight</label></td>
+					<td style="text-align:right" colspan="1"><input type="button"  class="close" value="X"/></td>
+				</tr>
+				<tr>
+					<td class=""><label style="font-size:15px;">Flight Designator</label></td>
+					<td class=""><label style="font-size:15px;">Flight Date</label></td>
+					<td class=""><label style="font-size:15px;">Flight Number</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" class="smallTextBox1" value="SK" title="Flight Designator" maxlength="2" name="txtFlightDesignator3" id="txtFlightDesignator3"/></td>
+					<td><input type="text" style="width:30px" title="Date" name="txtFlightDate3" id="txtFlightDate3" maxlength="3"/></td>
+					<td><input type="text" style="width:50px" title="Flight Number" name="txtFlightNumber3" id="txtFlightNumber3" maxlength="6"/></td>
+				</tr>
+				<tr>
+					<td class=""><label style="font-size:15px;">Flight Designator</label></td>
+					<td class=""><label style="font-size:15px;">Flight Date</label></td>
+					<td class=""><label style="font-size:15px;">Flight Number</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" class="smallTextBox1" value="SK" title="Flight Designator" maxlength="2" name="txtFlightDesignator4" id="txtFlightDesignator4"/></td>
+					<td><input type="text" style="width:30px" title="Date" name="txtFlightDate4" id="txtFlightDate4" maxlength="2"/></td>
+					<td><input type="text" style="width:50px" title="Flight Number" name="txtFlightNumber4" id="txtFlightNumber4" maxlength="6"/></td>
+				</tr>
+				<tr>
+					<td class=""><label style="font-size:15px;">Flight Designator</label></td>
+					<td class=""><label style="font-size:15px;">Flight Date</label></td>
+					<td class=""><label style="font-size:15px;">Flight Number</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" class="smallTextBox1" value="SK" title="Flight Designator" maxlength="2" name="txtFlightDesignator5" id="txtFlightDesignator5"/></td>
+					<td><input type="text" style="width:30px" title="Date" name="txtFlightDate5" id="txtFlightDate5" maxlength="2"/></td>
+					<td><input type="text" style="width:50px" title="Flight Number" name="txtFlightNumber5" id="txtFlightNumber5" maxlength="6"/></td>
+				</tr>
+				<tr>
+					<td class=""><label style="font-size:15px;">Flight Designator</label></td>
+					<td class=""><label style="font-size:15px;">Flight Date</label></td>
+					<td class=""><label style="font-size:15px;">Flight Number</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" class="smallTextBox1" value="SK" title="Flight Designator" maxlength="2" name="txtFlightDesignator6" id="txtFlightDesignator6"/></td>
+					<td><input type="text" style="width:30px" title="Date" name="txtFlightDate6" id="txtFlightDate6" maxlength="2"/></td>
+					<td><input type="text" style="width:50px" title="Flight Number" name="txtFlightNumber6" id="txtFlightNumber6" maxlength="6"/></td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		</td>
+		</tr>
+		</table>
+		</div>
+	</td>
+	</tr>
+			 
+</table> <!-- MAIN TABLE-->
+</CENTER>
+</form>
+</body>
+</html>
